@@ -1,34 +1,33 @@
 ---
-title: "My Name"       # the title of the index page
+title: "Leo Furr"       # the title of the index page
 about:
   # template types
   #template: jolla
   template: trestles
   #template: broadside
   # image details
-  image: files/profile-pic.jpg
+  image: files/FurrHeadshot1.jpg
   image-width: 20em            # to adjust size
   image-shape: round           # to make round
   
   links:
     # add others
     - icon: linkedin
-      href: https://www.linkedin.com/school/claremont-mckenna-college/posts/?feedView=all
-    - icon: twitter-x
-      href: https://x.com/CMCnews
+      href: https://www.linkedin.com/leofurr/
+
 
 ---
 
-I am a ... blah blah
+I am an Economics major with a Data Science sequence. 
 
 ## Education
 
-Institution | City, State
-B.A in Degree | start - finish
+Claremont McKenna College | Claremont, CA
+B.A in Economics | 2022 - 2027
 
 ## Experience
 
-Organization A | Title | start - finish
+Lowe Institute | Research Analyst | Sep 2025 - Present
 
-Organization b | Title | start - finish
+Kluge Center, Library of Congress | Research Intern | Jun 2025 - Aug 2025
 
