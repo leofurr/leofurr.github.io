@@ -13,12 +13,12 @@ about:
   links:
     # add others
     - icon: linkedin
-      href: https://www.linkedin.com/leofurr/
+      href: https://www.linkedin.com/in/leo-furr/
 
 
 ---
 
-I am an Economics major with a Data Science sequence. 
+I am an Economics major with a Data Science sequence. I enjoy reading periodicals and Ultimate Frisbee. 
 
 ## Education
 
