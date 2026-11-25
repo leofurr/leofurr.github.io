@@ -28,13 +28,6 @@
     "text": "As of now: working on organizing data and subsequent cleaning of Zillow Housing Prices.\nMy Now page\nMy Project page\nGo back home"
   },
   {
-    "objectID": "now.html#this-is-a-header",
-    "href": "now.html#this-is-a-header",
-    "title": "This is my now.qmd page title",
-    "section": "This is a header",
-    "text": "This is a header\nWith content …\n\nAnd a sub-header\nAnd more content …\nMy Now page\nMy Project page\nGo back home"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Leo Furr",
@@ -72,43 +65,36 @@
   {
     "objectID": "pages/project/index.html",
     "href": "pages/project/index.html",
-    "title": "This is the pages/project/index page title",
+    "title": "The Great Divergence In US Housing Prices",
     "section": "",
-    "text": "This is a Quarto website. This pages/project/index.qmd file could very well contain all of your plots and your entire data story if your goal is present such a story linearly. If so, you can remove teh content needed for the pages/page01.qmd file and adjust your _quarto.yml file to remove the Drop down tab from the navbar (left). If your story is linear, just be careful to arrange your headers, plots, and written content in the order they should appear."
+    "text": "Explain about housing prices and their sharp rise have become central to affordability.\nWant to first look at housing prices at the aggregate, and then break it down by MSA, and compare housing prices to rental prices and construction prices (which areas have the biggest disparity between rentals and home prices? perhaps gives a clue on economic mobility and breaking out of a rental trap)\nLook at how these trends have fluctuated over time"
   },
   {
-    "objectID": "pages/project/index.html#this-is-a-header",
-    "href": "pages/project/index.html#this-is-a-header",
-    "title": "This is the pages/project/index page title",
-    "section": "This is a header",
-    "text": "This is a header\nWith content …\n\nAnd a sub-header\nAnd more content …\n\n\nAnd a code block"
+    "objectID": "pages/project/index.html#data-sources",
+    "href": "pages/project/index.html#data-sources",
+    "title": "The Great Divergence In US Housing Prices",
+    "section": "Data Sources:",
+    "text": "Data Sources:\nAll my housing data comes from https://www.zillow.com/research/data/. I get my data for home values from the Zillow Home Value Index prices at the US level, which includes data at both the national level and at MSA granularity. The values are housing prices for all homes, smoothed and seasonally adjusted.\nThe construction data looks at ____, while the rental prices look at _____"
   },
   {
-    "objectID": "pages/project/index.html#plot-header",
-    "href": "pages/project/index.html#plot-header",
-    "title": "This is the pages/project/index page title",
-    "section": "Plot Header",
-    "text": "Plot Header\n\n\n\nCaption Text"
+    "objectID": "pages/project/index.html#summary-statistics",
+    "href": "pages/project/index.html#summary-statistics",
+    "title": "The Great Divergence In US Housing Prices",
+    "section": "Summary Statistics",
+    "text": "Summary Statistics\nData Coverage: I have housing prices since January of 2000, but only have rental prices since January of 2015 and home construction since January of 2018."
   },
   {
-    "objectID": "pages/project/index.html#plot-explanation",
-    "href": "pages/project/index.html#plot-explanation",
-    "title": "This is the pages/project/index page title",
-    "section": "Plot Explanation",
-    "text": "Plot Explanation\nBlah, blah, blah …"
+    "objectID": "pages/project/index.html#one-headline-number-as-the-title-housing-prices-have-increased-___-over-the-past-___-years-in-the-us",
+    "href": "pages/project/index.html#one-headline-number-as-the-title-housing-prices-have-increased-___-over-the-past-___-years-in-the-us",
+    "title": "The Great Divergence In US Housing Prices",
+    "section": "One Headline Number As The Title? Housing prices have increased ___ % over the past ___ years in the US",
+    "text": "One Headline Number As The Title? Housing prices have increased ___ % over the past ___ years in the US\n\n\n\n\nCaption Text\n\n\nAt the aggregate, housing prices have increased from $122,626 to $366,157 from January of 2000 until September of this year, a 298.6% difference. This headline number, however, conceals variation in price at more granular geographies, and I am yet to explore how housing prices intertwine with rental prices and construction amount.\nBut how do the distributions of home value prices look? I want to use a histogram to look at this, as it can clearly show a distribution of a variable of discrete values.\n\n At the MSA level, housing prices are very positively skewed, meaning most MSAs have a lower average housing price; although there are many MSAs with much higher Avg housing price.\n\nRental Prices in the US\n[PLACEHOLDER]"
   },
   {
-    "objectID": "pages/project/index.html#plot-header-1",
-    "href": "pages/project/index.html#plot-header-1",
-    "title": "This is the pages/project/index page title",
-    "section": "Plot Header",
-    "text": "Plot Header\n\n\n\nCaption Text"
-  },
-  {
-    "objectID": "pages/project/index.html#plot-explanation-1",
-    "href": "pages/project/index.html#plot-explanation-1",
-    "title": "This is the pages/project/index page title",
-    "section": "Plot Explanation",
-    "text": "Plot Explanation\nBlah, blah, blah …"
+    "objectID": "pages/project/index.html#digging-deeper",
+    "href": "pages/project/index.html#digging-deeper",
+    "title": "The Great Divergence In US Housing Prices",
+    "section": "Digging Deeper…",
+    "text": "Digging Deeper…\nGraph about the correlation between housing construction and home prices (are there clear affects on the supply-side on housing prices? What about rental prices?) Look at the aggregate and then also at the state/MSA - Use a varying alpha from the correlation line, directly annotate the r on the graph\n\n\n\nCaption Text\n\n\nNote: I changed the alphas of the points to fade when further from the correlation, according to the findings of Strain et al. \nThe correlation between housing prices and construction is 0.12, which is counter to what I would expect if supply-and-demand were to hold true (more construction leads to more supply which decreases price). There are some issues with this plot, namely that sampling is not independent (multiple MSAs show up in different years). Also, construction likely has some sort of lagged effect, perhaps into the next month or the next year. I want to create a plot or edit the data to reflect this lag (and also make independence valid) by looking at the change in housing prices (perhaps relative to the national trend?) following construction. I have to think about it more. Also how I can control for larger metros."
   }
 ]

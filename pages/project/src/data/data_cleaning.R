@@ -56,7 +56,9 @@ clean_zillow <- function(raw, value_name) {
       names_to = "year_month",
       values_to = value_name
     ) |>
-    mutate(date = as.Date(paste0(year_month, "-01")))
+    mutate(date  = as.Date(paste0(year_month, "-01")),
+           year  = year(date),
+           month = month(date))
 }
 
 housing_cleaned      <- clean_zillow(housing_us_raw,   "price")
@@ -64,7 +66,7 @@ construction_cleaned <- clean_zillow(construction_raw, "construction")
 rent_cleaned         <- clean_zillow(renting_raw,      "rent")
 
 # Join all three
-join_keys <- c("RegionName", "RegionType", "date")
+join_keys <- c("RegionID", "date")
 
 all_cleaned <- housing_cleaned |>
   left_join(select(construction_cleaned, all_of(join_keys), construction),

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>This is the pages/project/index page title</title>
+<title>The Great Divergence In US Housing Prices</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">This is the pages/project/index page title</h1>
+<h1 class="title">The Great Divergence In US Housing Prices</h1>
 </div>
 
 
@@ -173,44 +173,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website. This pages/project/index.qmd file could very well contain all of your plots and your entire data story if your goal is present such a story linearly. If so, you can remove teh content needed for the pages/page01.qmd file and adjust your _quarto.yml file to remove the Drop down tab from the navbar (left). If your story is linear, just be careful to arrange your headers, plots, and written content in the order they should appear.</p>
-<section id="this-is-a-header" class="level2">
-<h2 class="anchored" data-anchor-id="this-is-a-header">This is a header</h2>
-<p>With content …</p>
-<section id="and-a-sub-header" class="level3">
-<h3 class="anchored" data-anchor-id="and-a-sub-header">And a sub-header</h3>
-<p>And more content …</p>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<ul>
+<li>Explain about housing prices and their sharp rise have become central to affordability.</li>
+<li>Want to first look at housing prices at the aggregate, and then break it down by MSA, and compare housing prices to rental prices and construction prices (which areas have the biggest disparity between rentals and home prices? perhaps gives a clue on economic mobility and breaking out of a rental trap)</li>
+<li>Look at how these trends have fluctuated over time</li>
+</ul>
 </section>
-<section id="and-a-code-block" class="level3">
-<h3 class="anchored" data-anchor-id="and-a-code-block">And a code block</h3>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources:</h2>
+<p>All my housing data comes from https://www.zillow.com/research/data/. I get my data for home values from the Zillow Home Value Index prices at the US level, which includes data at both the national level and at MSA granularity. The values are housing prices for all homes, smoothed and seasonally adjusted.</p>
+<p>The construction data looks at ____, while the rental prices look at _____</p>
 </section>
+<section id="summary-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h2>
+<p>Data Coverage: I have housing prices since January of 2000, but only have rental prices since January of 2015 and home construction since January of 2018.</p>
 </section>
-<section id="plot-header" class="level2">
-<h2 class="anchored" data-anchor-id="plot-header">Plot Header</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../..\pages/project/figs/mpg-by-hp.png" class="img-fluid figure-img" style="width:80.0%" alt="This is alt-text for describing the plot for screen readers ..."></p>
-<figcaption>Caption Text</figcaption>
-</figure>
-</div>
-</section>
-<section id="plot-explanation" class="level2">
-<h2 class="anchored" data-anchor-id="plot-explanation">Plot Explanation</h2>
-<p>Blah, blah, blah …</p>
+<section id="aggregate-analysis" class="level1">
+<h1>AGGREGATE ANALYSIS</h1>
+<section id="one-headline-number-as-the-title-housing-prices-have-increased-___-over-the-past-___-years-in-the-us" class="level2">
+<h2 class="anchored" data-anchor-id="one-headline-number-as-the-title-housing-prices-have-increased-___-over-the-past-___-years-in-the-us">One Headline Number As The Title? Housing prices have increased ___ % over the past ___ years in the US</h2>
 <!-- SAVE PLOT AS PNG -->
-</section>
-<section id="plot-header-1" class="level2">
-<h2 class="anchored" data-anchor-id="plot-header-1">Plot Header</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../..\pages/project/figs/mpg-by-wt-for-cyl.png" class="img-fluid figure-img" style="width:80.0%" alt="This is alt-text for describing the plot for screen readers ..."></p>
+<p><img src="../..\pages/project/figs/aggregate_prices.png" class="img-fluid figure-img" style="width:80.0%" alt="This is alt-text for describing the plot for screen readers ..."></p>
 <figcaption>Caption Text</figcaption>
 </figure>
 </div>
+<p>At the aggregate, housing prices have increased from $122,626 to $366,157 from January of 2000 until September of this year, a <strong>298.6%</strong> difference. This headline number, however, conceals variation in price at more granular geographies, and I am yet to explore how housing prices intertwine with rental prices and construction amount.</p>
+<p>But how do the distributions of home value prices look? I want to use a histogram to look at this, as it can clearly show a distribution of a variable of discrete values.</p>
+<!-- SAVE PLOT AS PNG -->
+<p><img src="../..\pages/project/figs/prices_histogram.png" class="img-fluid" style="width:80.0%" alt="This is alt-text for describing the plot for screen readers ..."> At the MSA level, housing prices are very positively skewed, meaning most MSAs have a lower average housing price; although there are many MSAs with much higher Avg housing price.</p>
+<section id="rental-prices-in-the-us" class="level3">
+<h3 class="anchored" data-anchor-id="rental-prices-in-the-us">Rental Prices in the US</h3>
+<p>[PLACEHOLDER]</p>
 </section>
-<section id="plot-explanation-1" class="level2">
-<h2 class="anchored" data-anchor-id="plot-explanation-1">Plot Explanation</h2>
-<p>Blah, blah, blah …</p>
+</section>
+<section id="digging-deeper" class="level2">
+<h2 class="anchored" data-anchor-id="digging-deeper">Digging Deeper…</h2>
+<p>Graph about the correlation between housing construction and home prices (are there clear affects on the supply-side on housing prices? What about rental prices?) Look at the aggregate and then also at the state/MSA - Use a varying alpha from the correlation line, directly annotate the r on the graph</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../..\pages/project/figs/const_prices_corr.png" class="img-fluid figure-img" style="width:80.0%" alt="This is alt-text for describing the plot for screen readers ..."></p>
+<figcaption>Caption Text</figcaption>
+</figure>
+</div>
+<p>Note: I changed the alphas of the points to fade when further from the correlation, according to the findings of Strain et al.&nbsp;</p>
+<p>The correlation between housing prices and construction is 0.12, which is counter to what I would expect if supply-and-demand were to hold true (more construction leads to more supply which decreases price). There are some issues with this plot, namely that sampling is not independent (multiple MSAs show up in different years). Also, construction likely has some sort of lagged effect, perhaps into the next month or the next year. I want to create a plot or edit the data to reflect this lag (and also make independence valid) by looking at the change in housing prices (perhaps relative to the national trend?) following construction. I have to think about it more. Also how I can control for larger metros.</p>
+</section>
+</section>
+<section id="buy-rent-disparity-index" class="level1">
+<h1>Buy-Rent Disparity Index</h1>
+<p>Rental prices are obviously closely related to housing prices. However, it is perhaps the case that… Housing price / rental price disparity index: - Construct for each MSA a ratio of avg home price to rental price - Make a distribution graph of that (raincloud plot?) - Merge in population/income information, see if there is any relationship between this index and income per capita?</p>
 
 
 </section>
